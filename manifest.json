@@ -1,0 +1,9 @@
+{
+  "id": "obs2feishu",
+  "name": "Obs2Feishu",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "将 Obsidian Markdown 笔记导出为飞书兼容的 HTML 文件",
+  "author": "obs2feishu",
+  "isDesktopOnly": true
+}
