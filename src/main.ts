@@ -9,7 +9,7 @@ function getVaultBasePath(vault: any): string {
   return vault.adapter.basePath;
 }
 
-export default class Obs2FeishuPlugin extends Plugin {
+export default class MD2HTMLPlugin extends Plugin {
   async onload() {
     // 注册文件菜单项（右键菜单 / 更多选项）
     this.registerEvent(
@@ -18,7 +18,7 @@ export default class Obs2FeishuPlugin extends Plugin {
 
         menu.addItem((item) => {
           item
-            .setTitle("导出为飞书 HTML")
+            .setTitle("导出为 HTML")
             .setIcon("file-output")
             .onClick(async () => {
               await this.exportFile(file);
@@ -30,7 +30,7 @@ export default class Obs2FeishuPlugin extends Plugin {
     // 注册命令面板命令
     this.addCommand({
       id: "export-current-file",
-      name: "导出当前文件为飞书 HTML",
+      name: "导出当前文件为 HTML",
       checkCallback: (checking: boolean) => {
         const file = this.app.workspace.getActiveFile();
         if (!file || file.extension !== "md") return false;
@@ -46,7 +46,7 @@ export default class Obs2FeishuPlugin extends Plugin {
     const notice = new Notice("正在转换...", 0);
 
     const logFn = (msg: string) => {
-      console.log(`[obs2feishu] ${msg}`);
+      console.log(`[md2html] ${msg}`);
     };
 
     try {

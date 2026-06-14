@@ -1,6 +1,6 @@
-# obs2feishu
+# MD2HTML
 
-Obsidian 插件：将 Markdown 笔记导出为飞书兼容的 HTML 文件。
+Obsidian 插件：将 Markdown 笔记导出为 HTML 文件。
 
 ## 功能
 
@@ -12,14 +12,14 @@ Obsidian 插件：将 Markdown 笔记导出为飞书兼容的 HTML 文件。
 
 ## 安装
 
-1. 在 vault 目录下创建 `.obsidian/plugins/obs2feishu/`
+1. 在 vault 目录下创建 `.obsidian/plugins/md2html/`
 2. 将 `main.js`、`manifest.json`、`styles.css` 复制到该目录
-3. Obsidian 设置 → 第三方插件 → 启用 Obs2Feishu
+3. Obsidian 设置 → 第三方插件 → 启用 MD2HTML
 
 ## 使用
 
-- 打开任意 `.md` 文件，点击右上角 **⋮ 更多选项** → **导出为飞书 HTML**
-- 或使用命令面板 `Ctrl+P` → 搜索「导出当前文件为飞书 HTML」
+- 打开任意 `.md` 文件，点击右上角 **⋮ 更多选项** → **导出为 HTML**
+- 或使用命令面板 `Ctrl+P` → 搜索「导出当前文件为 HTML」
 
 HTML 文件会生成在 Markdown 同目录下，并自动用浏览器打开。
 

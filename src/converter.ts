@@ -184,7 +184,7 @@ function stripFrontmatter(content: string): string {
 }
 
 /**
- * 将 [[wiki link]] 转为纯文本（飞书 HTML 不支持 wiki link）
+ * 将 [[wiki link]] 转为纯文本（HTML 中不保留 Obsidian wiki link）
  */
 function convertWikiLinks(content: string): string {
   // [[link|display]] → display

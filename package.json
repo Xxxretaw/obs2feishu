@@ -1,7 +1,7 @@
 {
-  "name": "obs2feishu",
+  "name": "md2html",
   "version": "1.0.0",
-  "description": "Obsidian plugin: export markdown to Feishu-compatible HTML",
+  "description": "Obsidian plugin: export Markdown notes to HTML",
   "main": "main.js",
   "scripts": {
     "dev": "node esbuild.config.mjs",
